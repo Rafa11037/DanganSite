@@ -57,6 +57,25 @@
 /* Reset
 /* --------------------------- */
 
+.h1,
+.h2,
+.h3{
+    color: var(--white);
+    line-height: 40px;
+}
+
+.h1{
+    font-size: var(--fs-1);
+}
+
+.h2{
+    font-size: var(--fs-2);
+}
+
+.h3{
+    font-size: var(--fs-6);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -131,4 +150,34 @@ body.active{
 button{
     background: transparent;
     border: none;
+}
+
+/* --------------------------- *\
+/* Banner
+/* --------------------------- */
+
+.hero{
+    background: url('../img/DRBanner2.png') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-block: var(--section_padding);
+}
+
+.hero-content{
+    margin-top: 60px;
+}
+
+.hero-subtitle{
+    color: var(--white);
+    font-size: var(--fs-4);
+    font-weight: var(--fw700);
+    margin-bottom: 20px;
+}
+
+.hero-title > strong{
+    color: #ff0081;
 }
